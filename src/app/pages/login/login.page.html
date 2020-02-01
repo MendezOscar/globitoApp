@@ -1,9 +1,3 @@
-<ion-header no-border>
-  <ion-toolbar>
-    <ion-title></ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
   <ion-grid>
@@ -11,26 +5,30 @@
       <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
         <br>
         <br>
+        <br>
         <div class="avatar" align="center">
           <img src="../../../assets/logo.png" alt="">
         </div>
         <div padding>
-          <ion-item>
-            <ion-input name="username" type="username" placeholder="Usuario"></ion-input>
-            <ion-icon name="contact" slot="end"></ion-icon>
-          </ion-item>
+          <div class="webflow-style-input">
+            <input class="" type="email" placeholder="¿Cual es tu usuario?">
+            <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+          </div>
           <br>
-          <ion-item>
-            <ion-input name="password" type="password" placeholder="Clave"></ion-input>
-            <ion-icon name="key"></ion-icon>
-          </ion-item>
+          <div class="webflow-style-input">
+            <input class="" type="email" placeholder="¿Cual es tu contraseña?">
+            <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+          </div>
         </div>
+        <br>
         <div padding>
-          <ion-button  type="submit" expand="block">Ingresar
-          </ion-button>
-          <ion-button  type="submit" expand="block" routerLink='/register'>Registrarme
+          <ion-button type="submit" expand="block">Ingresar
           </ion-button>
         </div>
+        <ion-text color="medium" align="center">
+          <h6>¿No tienes una cuenta?</h6>
+          <h5><a href="/register">Registrarse</a></h5>
+        </ion-text>
       </ion-col>
     </ion-row>
   </ion-grid>
