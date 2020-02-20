@@ -1,0 +1,94 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Informacion de viaje
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Titulo</ion-label>
+    <ion-input [(ngModel)]="title"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item-divider>
+    <ion-label>
+      Fechas
+    </ion-label>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>Fecha inicial</ion-label>
+    <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" [(ngModel)]="startdate"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fecha Final</ion-label>
+    <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" [(ngModel)]="enddate"></ion-datetime>
+  </ion-item>
+  <br>
+  <ion-item-divider>
+      <ion-label>
+        Destino
+      </ion-label>
+    </ion-item-divider>
+  <ion-item>
+    <ion-label>Ciudad</ion-label>
+    <ion-select placeholder="Seleccione una ciudad" name="ciudad" class="form-control" id="ciudad" 
+    [(ngModel)]="city">
+      <ion-select-option *ngFor="let item of cities" 
+        [value]="item.cityid">
+        {{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <br>
+  <ion-item-divider>
+    <ion-label>
+      Intereses
+    </ion-label>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>Cultura</ion-label>
+    <ion-select multiple="true" placeholder="Seleccione" name="culture" class="form-control" id="culture" 
+    [(ngModel)]="myculture">
+      <ion-select-option *ngFor="let item of culture" 
+        [value]="item.categoryoption1">
+        {{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ocio</ion-label>
+    <ion-select multiple="true" placeholder="Seleccione" name="leisure" class="form-control" id="leisure" 
+    [(ngModel)]="myleisure">
+      <ion-select-option *ngFor="let item of leisure" 
+        [value]="item.categoryoption1">
+        {{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Turismo</ion-label>
+    <ion-select multiple="true" placeholder="Seleccione" name="tourism" class="form-control" id="tourism" 
+    [(ngModel)]="mytourism">
+      <ion-select-option *ngFor="let item of tourism" 
+        [value]="item.categoryoption1">
+        {{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Transporte</ion-label>
+    <ion-select multiple="true" placeholder="Seleccione" name="transport" class="form-control" id="transport" 
+    [(ngModel)]="mytransport">
+      <ion-select-option *ngFor="let item of transport" 
+        [value]="item.categoryoption1">
+        {{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <br>
+  <br>
+  <div align="center">
+      <ion-button color="success" (click)="save()">Tomar viaje</ion-button>
+      <ion-button color="medium" (click)="cancel()">Cancelar</ion-button>
+    </div>
+
+</ion-content>

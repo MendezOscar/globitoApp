@@ -11,18 +11,20 @@
         </div>
         <div padding>
           <div class="webflow-style-input">
-            <input class="" type="email" placeholder="¿Cual es tu usuario?">
+            <input class="" type="email" placeholder="¿Cual es tu usuario?"
+            [(ngModel)]="username">
             <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
           </div>
           <br>
           <div class="webflow-style-input">
-            <input class="" type="email" placeholder="¿Cual es tu contraseña?">
+            <input class="" type="password" placeholder="¿Cual es tu contraseña?"
+            [(ngModel)]="password">
             <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
           </div>
         </div>
         <br>
         <div padding>
-          <ion-button type="submit" expand="block">Ingresar
+          <ion-button type="submit" expand="block" (click)="login()">Ingresar
           </ion-button>
         </div>
         <ion-text color="medium" align="center">

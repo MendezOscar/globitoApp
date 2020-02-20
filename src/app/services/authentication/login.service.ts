@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from 'src/app/mdels/user';
+import { User } from 'src/app/models/user';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginService {
 
-  apiUrl = 'https://192.168.100.8/api/user';
+  apiUrl = 'https://localhost:5001/api/User';
 
   constructor(private http: HttpClient) { }
 
