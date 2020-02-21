@@ -32,4 +32,8 @@ export class Tab1Page implements OnInit {
   createNewTravel() {
     this.router.navigate(['/travelinfo']);
   }
+
+  gotoPlaceActivities(){
+    this.router.navigate(['/placeactivities']);
+  }
 }

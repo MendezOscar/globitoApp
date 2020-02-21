@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
@@ -20,7 +21,15 @@ const routes: Routes = [
   {
     path: 'travelinfo',
     loadChildren: () => import('./pages/travelinfo/travelinfo.module').then( m => m.TravelinfoPageModule)
+  },  {
+    path: 'itinerarydetails',
+    loadChildren: () => import('./pages/itinerarydetails/itinerarydetails.module').then( m => m.ItinerarydetailsPageModule)
+  },
+  {
+    path: 'placeactivities',
+    loadChildren: () => import('./pages/placeactivities/placeactivities.module').then( m => m.PlaceactivitiesPageModule)
   }
+
 
 ];
 @NgModule({

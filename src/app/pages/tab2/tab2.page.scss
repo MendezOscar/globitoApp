@@ -1,1 +1,14 @@
 
+ion-content {
+    --background: url(../../../assets/background1.jpg) no-repeat 0 0/100% 100%;
+  }
+
+  ion-card-content{
+    color: black;
+    text-align: justify;
+  }
+
+  ion-button{
+    --background: rgb(38, 161, 38);
+    opacity: 0.7;
+}
