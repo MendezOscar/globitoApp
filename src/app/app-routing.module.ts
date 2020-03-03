@@ -28,6 +28,14 @@ const routes: Routes = [
   {
     path: 'placeactivities',
     loadChildren: () => import('./pages/placeactivities/placeactivities.module').then( m => m.PlaceactivitiesPageModule)
+  },
+  {
+    path: 'recommendations',
+    loadChildren: () => import('./pages/recommendations/recommendations.module').then( m => m.RecommendationsPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   }
 
 

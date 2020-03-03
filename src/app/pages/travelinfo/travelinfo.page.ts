@@ -106,7 +106,7 @@ saveMyCultureSelection() {
       this.travelinfodetails = new Travelinfodetails();
       this.travelinfodetails.category = obj;
       this.travelinfodetails.priority = 0;
-      this.travelinfodetails.travelinfoid = 14;
+      this.travelinfodetails.travelinfoid = 28;
       this.travelinfodetailsService.createTravelinfodetails(this.travelinfodetails).subscribe(data => {
       });
     });

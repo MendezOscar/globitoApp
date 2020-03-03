@@ -13,8 +13,8 @@ export class PlaceactivitiesPage implements OnInit {
   ngOnInit() {
   }
 
-  back(){
-    this.router.navigate(['/home/tabs/tab1']);
+  back() {
+    this.router.navigate(['/recommendations']);
   }
 
 }

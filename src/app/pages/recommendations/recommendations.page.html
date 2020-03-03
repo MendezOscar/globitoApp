@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-button (click)='back()'>
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-fab>
+
+  <ion-card *ngFor="let item of places">
+    <ion-card-header>
+      <ion-card-subtitle>Santa Cruz de Yojoa</ion-card-subtitle>
+      <ion-card-title>{{item.name}}</ion-card-title>
+      <img src={{item.img}} />
+    </ion-card-header>
+
+    <ion-card-content>
+    </ion-card-content>
+    <ion-button (click)="gotoPlaceActivities()">Ver detalle</ion-button>
+    <ion-button (click)="contactar()">Contactar</ion-button>
+  </ion-card>
+
+</ion-content>
