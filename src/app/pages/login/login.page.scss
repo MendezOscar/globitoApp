@@ -27,7 +27,7 @@
 }
 
 .login__formulario{
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -37,7 +37,7 @@
 }
 
 .login__image--1{
-  width: 40%;
+  width: 50%;
 }
 
 .login__formulario--inputs{
@@ -52,11 +52,12 @@ input {
   border: none;
   margin-top: 10px;
   margin-bottom: 5px;
-  height: 40px;
+  height: 50px;
+  width: 250px;
 }
 
 input::placeholder{
-  font-size: 10px;
+  font-size: 16px;
   padding-left: 10px;
   opacity: 0.5;
   font-family: 'Poppins', 'Font Awesome 5 Free';
@@ -67,17 +68,22 @@ input:focus{
 }
 
 input.login__input--iniciar-sesion{
+  margin-top: 30px;
   background: #3BD1B3;
   color: white;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 18px;
   padding: 5px;
 }
 
 .login__formulario a{
+  font-size: 16px;
   color: #11846D;
   font-weight: 700;
-  font-size: 12px;
-  margin-top: 10px;
+  margin-top: 22px;
   margin-bottom: 20px;
+}
+
+.login__formulario a:hover{
+  text-decoration: none;
 }
