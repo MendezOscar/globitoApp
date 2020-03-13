@@ -1,123 +1,83 @@
-$primary: #11998e;
-$secondary: #38ef7d;
-$white: #fff;
-$gray: #9b9b9b;
-
-ion-fab{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-}
-
-ion-button{
-    --background: rgb(38, 161, 38);
-}
-
-ion-content {
-    --background: url(../../../assets/background.jpg) no-repeat 0 0/100% 100%;
-}
-html { box-sizing: border-box; font-size: 10px; }
-*, *:before, *:after { box-sizing: inherit; }
-body, ul, li  { margin: 0; padding: 0; }
-li { list-style: none; }
-p, h1, h2, h3, h4, h5, h6 { margin-top: 0; }
-a { text-decoration: none; }
-input { border-style: none; background: transparent; outline: none; }
-button { padding: 0; background: none; border: none; outline: none; }
-
-// some basic page styles
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
-}
-
-// for demo
-h1.demo {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  color: #f5f6ff;
-}
-a.demo {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: normal;
-  color: rgba(202, 205, 239, 0.8);
-  margin-bottom: 3rem;
-}
-.demo-flex-spacer {
-  flex-grow: 1;
-}
-.container {
+.login{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  //justify-content: center;
-  height: 100vh;
-  max-width: 1600px;
-  padding: 0 15px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
-// colors
-$input-background: rgba(57, 63, 84, 0.8);
-$input-text-inactive: #7881A1;
-$input-text-active: #BFD2FF;
-
-// gradient animation
-@keyframes gradient { 
-  0%{background-position:0 0}
-  100%{background-position:100% 0}
-}
-
-.webflow-style-input {
-  position: relative;
+.logo{
+  /* background-color: black; */
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 2px;
-  padding: 1.4rem 2rem 1.6rem;
-  background: $input-background;
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 999;
-    height: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-position: 0% 0%;
-    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
-    background-size: 500% auto;
-    animation: gradient 3s linear infinite;
-  }
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.webflow-style-input input {
-  flex-grow: 1;
-  color: $input-text-active;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  vertical-align: middle;
-  &::-webkit-input-placeholder {
-    color: $input-text-inactive;
-  }
+.logo__image{
+  width: 90%;
 }
 
-.webflow-style-input button {
-  color:  $input-text-inactive;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  vertical-align: middle;
-  transition: color .25s;
-  &:hover {
-    color: $input-text-active;
-  }
+.logo__text{
+  color: #707070;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.login__formulario{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.login__image--1{
+  width: 40%;
+}
+
+.login__formulario--inputs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+input {
+  background: #F4F6FA;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 40px;
+}
+
+input::placeholder{
+  font-size: 10px;
+  padding-left: 10px;
+  opacity: 0.5;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+}
+
+input:focus{
+  outline: none;
+}
+
+input.login__input--iniciar-sesion{
+  background: #3BD1B3;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.login__formulario a{
+  color: #11846D;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
