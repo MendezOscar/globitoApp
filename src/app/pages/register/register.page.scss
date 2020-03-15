@@ -1,82 +1,86 @@
-ion-button{
-    --background: rgb(38, 161, 38);
-}
-
-ion-content {
-    --background: url(../../../assets/background.jpg) no-repeat 0 0/100% 100%;
-}
-
-$primary: #11998e;
-$secondary: #38ef7d;
-$white: #fff;
-$gray: #9b9b9b;
-.form__group {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.form__field {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid $gray;
-  outline: 0;
-  font-size: 1.3rem;
-  color: $white;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-
-  &::placeholder {
-    color: transparent;
-  }
-
-  &:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 20px;
-  }
-}
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: $gray;
-}
-
-.form__field:focus {
-  ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: $primary;
-    font-weight:700;    
-  }
-  padding-bottom: 6px;  
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, $primary,$secondary);
-  border-image-slice: 1;
-}
-/* reset input */
-.form__field{
-  &:required,&:invalid { box-shadow:none; }
-}
-/* demo */
-body {
-  font-family: 'Poppins', sans-serif; 
+.register{
+  margin-top: 70px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__image{
+  width: 90%;
+}
+
+.logo__text{
+  color: #707070;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.registro__formulario{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro__image--1{
+  width: 80%;
+}
+
+.registro__formulario h3{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  color: #707070;
+}
+
+.registro__formulario--inputs{
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  font-size: 1.5rem;
-  background-color:#222222;
+}
+
+form input{
+  margin-top: 30px;
+  width: 250px;
+  height: 40px;
+  border-style: none;
+  border-bottom: 1px solid #3BD1B3;
+}
+
+form input:focus{
+  outline: none;
+}
+
+form input::placeholder{
+  font-size: 16px;
+  padding-left: 10px;
+  opacity: 0.5;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+}
+
+form input.registro__input--siguiente{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #3BD1B3;
+  color: white;
+  font-weight: 900;
+  border-color: none;
+  font-size: 20px;
 }
