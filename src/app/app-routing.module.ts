@@ -21,7 +21,8 @@ const routes: Routes = [
   {
     path: 'travelinfo',
     loadChildren: () => import('./pages/travelinfo/travelinfo.module').then( m => m.TravelinfoPageModule)
-  },  {
+  },
+  {
     path: 'itinerarydetails',
     loadChildren: () => import('./pages/itinerarydetails/itinerarydetails.module').then( m => m.ItinerarydetailsPageModule)
   },
@@ -43,8 +44,12 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home-1/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
+
 
 
 ];
