@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'register-preferences',
     loadChildren: () => import('./pages/register-preferences/register-preferences.module').then( m => m.RegisterPreferencesPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   }
 
 
