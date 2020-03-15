@@ -1,0 +1,122 @@
+.register-preferences{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+}
+
+.logo{
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__image{
+  width: 90%;
+}
+
+.logo__text{
+  color: #707070;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.registro__formulario{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro__formulario img{
+  width: 60%;
+}
+
+.registro__formulario h3{
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #707070;
+  margin: 0;
+}
+
+.registro__formulario h3.registro__preferencia-encabezado{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.registro__preferencias-items{
+  display: inline;
+  text-align: center;
+}
+
+.btn-preferencia-item{
+  background: #1EBFA6;
+  opacity: 0.5;
+  color: white;
+  margin: 2px;
+  font-size: 10px;
+  font-size: 14px;
+}
+
+.btn-preferencia-item.btn-active{
+  opacity: 1;
+}
+
+.btn-preferencia-item:hover{
+  color: white;
+  opacity: 1;
+  outline: none;
+}
+
+.btn-preferencia-item:focus{
+  box-shadow: none;
+}
+
+.registrarme{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.registrarme .registro__input--siguiente{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #3BD1B3;
+  color: white;
+  font-weight: 900;
+  border-color: none;
+  font-size: 20px;
+}
+
+.btn-preferencia-registro{
+  font-size: 18px;
+  margin-left: 15px;
+  width: 70%;
+  background: #11846D;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn-preferencia-registro:hover{
+  color: white;
+  background: #1EBFA6;
+}
+
+.btn-preferencia-registro:focus{
+  box-shadow: none;
+}

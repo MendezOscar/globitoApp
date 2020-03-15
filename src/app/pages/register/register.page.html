@@ -1,49 +1,21 @@
 <ion-content>
-  <div class="avatar" align="center">
-    <img src="../../../assets/logo.png" alt="">
-  </div>
-
-  <div padding>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Name" name="name" id='name' required 
-      [(ngModel)]="name"/>
-      <label for="name" class="form__label">Nombre</label>
-    </div>  
-    <br>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="LastName" name="lastname" id='lastname' required 
-      [(ngModel)]="lastname"/>
-      <label for="lastname  " class="form__label">Apellido</label>
+  <div class="container-fluid register">
+    <!-- Parte del logo -->
+    <div class="row logo">
+      <img class="logo__image" src="../../../assets/globitoapp_logo.png" alt="">
+      <h1 class="logo__text">Tu viaje soñado</h1>
     </div>
-    <br>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Username" name="username" id='username' required 
-      [(ngModel)]="username"/>
-      <label for="username" class="form__label">Usuario</label>
-    </div>
-    <br>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Password" name="password" id='password' required 
-      type="password" [(ngModel)]="password"/>
-      <label for="username" class="form__label">Clave</label>
-    </div>
-    <br>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Phone" name="phone" id='phone' required 
-      [(ngModel)]="phone"/>
-      <label for="phone" class="form__label">Telefono</label>
-    </div>
-    <br>
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Email" name="email" id='email' required 
-      [(ngModel)]="email"/>
-      <label for="email" class="form__label">Correo</label>
-    </div>
-    <br>
-    <br>
-    <div align="center">
-      <ion-button color="success" (click)="save()">Registrar</ion-button>
-      <ion-button color="medium" (click)="cancel()">Cancelar</ion-button>
+    
+    <!-- Registro Stage 1 -->
+    <div class="row registro__formulario">
+      <img src="../../../assets/globitoapp_register-image1.png" alt="" class="registro__image--1">
+      <h3>REGISTRO DE <br/> USUARIO</h3>
+      <form class="registro__formulario--inputs">
+        <input class="registro__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Nombre completo">
+        <input class="registro__input--email" type="text" name="email" id="email" placeholder="&#xf1fa; Correo electrónico">
+        <input class="registro__input--password" type="text" name="password" id="password" placeholder="&#xf023;  Contraseña">
+        <input class="registro__input--siguiente" type="submit" value=">">
+      </form>
     </div>
   </div>
 </ion-content>
