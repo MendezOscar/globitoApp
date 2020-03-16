@@ -41,14 +41,7 @@ const routes: Routes = [
   {
     path: 'register-preferences',
     loadChildren: () => import('./pages/register-preferences/register-preferences.module').then( m => m.RegisterPreferencesPageModule)
-  },
-  {
-    path: 'inicio',
-    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
-
-
-
 ];
 @NgModule({
   imports: [
