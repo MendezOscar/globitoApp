@@ -43,9 +43,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/register-preferences/register-preferences.module').then( m => m.RegisterPreferencesPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home-1/home.module').then( m => m.HomePageModule)
-  },  {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
