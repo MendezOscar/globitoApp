@@ -21,7 +21,8 @@ const routes: Routes = [
   {
     path: 'travelinfo',
     loadChildren: () => import('./pages/travelinfo/travelinfo.module').then( m => m.TravelinfoPageModule)
-  },  {
+  },
+  {
     path: 'itinerarydetails',
     loadChildren: () => import('./pages/itinerarydetails/itinerarydetails.module').then( m => m.ItinerarydetailsPageModule)
   },
@@ -41,8 +42,6 @@ const routes: Routes = [
     path: 'register-preferences',
     loadChildren: () => import('./pages/register-preferences/register-preferences.module').then( m => m.RegisterPreferencesPageModule)
   }
-
-
 ];
 @NgModule({
   imports: [

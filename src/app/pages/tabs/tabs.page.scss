@@ -1,16 +1,19 @@
+ion-tab-bar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  --background: rgba(255,255,255,0.8);
+}
 
-iion-tab-bar {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    --background: rgba(255,255,255,0.8);
-  
-    ion-tab-button {
-      --background: transparent;
-    }
-  }
+ion-tab-bar ion-tab-button{
+  background: #11846D;
+  padding: 5px;
+  border: none;
+}
 
-  .custom-icon {
-    font-size: 64px;
-    color : white;
-  }
+.custom-icon {
+  font-size: 64px;
+  color : white;
+}

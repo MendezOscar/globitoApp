@@ -1,15 +1,80 @@
 <ion-content>
-  <ion-content>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="center">
-      <ion-button (click)="createNewTravel()">
-        <ion-icon name="chevron-down"></ion-icon>
-        <ion-label color="dark">¿A donde vas?</ion-label>
-      </ion-button>
+  <div class="container-fluid">
+    <!-- Encabezado principal -->
+    <div class="row encabezado">
+      <div class="col-8 saludo">
+        <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
+        <p>Hola, Fernando</p>
+      </div>
+      <div class="col-4">
+        <img src="../../../assets/globitoapp_logo.png" alt="Logo">
+      </div>
+      <div class="row imagen">
+        <div class="col">
+          <img src="../../../assets/home-image-1.png" alt="Imagen inicio">
+        </div>
+      </div>
     </div>
-    <ion-button class="button-recomendation" (click)="gotoRecommendations()">
-      <ion-icon name="chevron-down"></ion-icon>
-      <ion-label color="white">Recomendaciones para ti</ion-label>
-    </ion-button>
-  </ion-content>
+
+    <!-- Contenido principal -->
+    <div class="row main-content">
+      <div class="row nuevo-viaje">
+        <div class="col-12 titulo-1">
+          <p>La aventura te espera...</p>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-light crear-viaje">
+            <h5>Crear un nuevo viaje</h5>
+            <p>Comienza a armar tu viaje soñado</p>
+          </button>
+        </div>
+      </div>
+      <!-- Lugares recomendados -->
+      <div class="row recomendados">
+        <div class="col-12">
+          <h4>Lugares recomendados</h4>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 place-recommend">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/celaque.png" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Celaque</h5>
+                  <p class="card-text">Lempira</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 place-recommend">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/trujillo.png" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Trujillo</h5>
+                  <p class="card-text">Colón</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 place-recommend">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/san_pedro_sula.png" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">San Pedro Sula</h5>
+                  <p class="card-text">Cortés</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 place-recommend">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/santa_rosa.png" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Santa Rosa</h5>
+                  <p class="card-text">Copán</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
