@@ -15,8 +15,8 @@
       <img src="../../../assets/globitoapp_login-image1.png" alt="" class="login__image--1">
       <form class="login__formulario--inputs">
         <input class="login__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Usuario">
-        <input class="login__input--password" type="text" name="password" id="password" placeholder="&#xF084; Contraseña">
-        <input class="login__input--iniciar-sesion" type="submit" value="Iniciar Sesión">
+        <input class="login__input--password" type="password" name="password" id="password" placeholder="&#xF084; Contraseña">
+        <input class="login__input--iniciar-sesion" (click)="login()" type="submit" value="Iniciar Sesión">
       </form>
       <a href="/register">Registrarse</a>
     </div>

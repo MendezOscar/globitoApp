@@ -27,6 +27,8 @@ export class RegisterPage implements OnInit {
   }
 
   save() {
+    this.router.navigate(['/register-preferences']);
+    /*
     this.user = new User();
     this.user.name = this.name;
     this.user.lastname = this.lastname;
@@ -38,7 +40,7 @@ export class RegisterPage implements OnInit {
     this.registerService.createUser(this.user).subscribe(data => {
       this.router.navigate(['/']);
       this.presentToast();
-    });
+    });*/
   }
 
   cancel() {
