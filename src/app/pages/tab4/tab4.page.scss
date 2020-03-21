@@ -1,75 +1,139 @@
+.container-fluid{
+  background-color: #11846D;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+  height: 100vh;
+  color: #242732;
+}
 
+.encabezado{
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .welcome-card img {
-    max-height: 35vh;
-    overflow: hidden;
-  }
-  
-  ion-content {
-    --background: url(../../../assets/background1.jpg) no-repeat top center/cover fixed, #fff;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  
-    ion-button {
-        margin-top: 1em;
-        margin-bottom: 1em
-    }
-  }
-  
-  ion-toolbar {
-    --background: transparent;
-  }
-  
-  ion-chip {
-    --background: #9dc912;
-    --color: #fff;
-  }
-  
-  .card {
-    margin: 0 auto;
-  
-    .header {
-        height: 200px; // 20vh;
-  
-        .avatar {
-            width: 160px; //40vw
-            height: 160px;
-            position: relative;
-            margin: 0 auto;
-  
-            img {
-                display: block;
-                border-radius: 50%;
-                position: absolute;
-                bottom: calc(-1*(80px + 4px)); // -42px;
-                border: 8px solid #9Dc912;
-                background-color: #fff;
-            }
-        }
-    }
-  }
-  
-  .card-body {
-    background-color: #ffffff;
-    padding: 30px;
-    height: calc(100vh - (200px + 56px));
-    overflow: hidden;
-  
-    .user-meta {
-        padding-top: 40px;
-  
-        .playername {
-            font-size: 24px;
-            font-weight: 600;
-            color: #303940;
-        }
-  
-        .country {
-            font-size: 90%;
-            color: #949ea6;
-            text-transform: uppercase;
-            margin: 0 auto;
-        }
-    }
-  }
+.saludo{
+  display: -webkit-inline-box;
+}
+
+.encabezado p{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.main-content{
+  background-color: white;
+  border-radius: 40px 40px 0px 0px;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.user-pic-profile{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-pic-profile img{
+  border-radius: 50%;
+  width: 50%;
+}
+
+.user-name{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input{
+  margin-top: 30px;
+  width: 250px;
+  height: 40px;
+  border-style: none;
+  border-bottom: 1px solid #3BD1B3;
+}
+
+input:focus{
+  outline: none;
+}
+
+input::placeholder{
+  font-size: 20px;
+  padding-left: 10px;
+  opacity: 0.5;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+}
+
+.user-preferences{
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-preferences h5{
+  font-weight: 900;
+}
+
+.registro__preferencias-items{
+  display: inline;
+  text-align: center;
+}
+
+.registro__preferencias-items button{
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.btn-preferencia-item{
+  background: #1EBFA6;
+  opacity: 0.5;
+  color: white;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.btn-preferencia-item.btn-active{
+  opacity: 1;
+}
+
+.btn-preferencia-item:hover{
+  color: white;
+  opacity: 1;
+  outline: none;
+}
+
+.btn-preferencia-item:focus{
+  box-shadow: none;
+}
+
+.user-options{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.user-options button{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  font-weight: 900;
+}
+
+button.user-option-save{
+  background: #C9FFF4;
+  color: #11846D;
+}
+
+button.user-option-log-out{
+  background: #FF6E69;
+  color: white;
+}
