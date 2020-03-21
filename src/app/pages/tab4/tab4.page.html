@@ -1,35 +1,11 @@
 <ion-content>
-<<<<<<< HEAD
-      
-      <ion-content fullscreen="true" slot="fixed" >
-          <div class="card">
-            <div class="header">
-              <div class="avatar">
-                <img src="../../../assets/profile.png" alt="">
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="user-meta ion-text-center">
-              <h3 class="playername">{{user.username}}</h3>
-              <h5 class="country">{{user.name}} {{user.lastname}}</h5>
-                <h6 class="ranking"> </h6>
-              </div>
-              <br/>
-              <ion-card>
-                <ion-card-content>
-                  Ella es el amor de mi vida, a ella yo la amo de una forma inexplicable
-                  Globito App es por ella, ella es el Globito de mi vida.
-                </ion-card-content>
-              </ion-card>
-      
-            </div>
-=======
+
   <div class="container-fluid">
     <!-- Encabezado principal -->
     <div class="row encabezado">
       <div class="col-8 saludo">
         <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
-        <p>Hola, Fernando</p>
+        <p>Hola, Vanesa</p>
       </div>
       <div class="col-4">
         <img src="../../../assets/globitoapp_logo.png" alt="Logo">
@@ -44,10 +20,10 @@
     <!-- Contenido principal -->
     <div class="row main-content">
       <div class="col-12 user-pic-profile">
-        <img src="../../../assets/user-pic-profile.jpg" class="img-fluid" alt="Responsive image">
+        <img src="../../../assets/profile.png" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-12 user-name">
-        <input class="registro__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Fernando Muñoz">
+        <input class="registro__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Vanessa Avila">
       </div>
       <div class="col-12 user-preferences">
         <h5>Preferencias</h5>
@@ -63,13 +39,12 @@
             <br/>
             <button type="button" class="btn btn-preferencia-item btn-active">Religioso</button>
             <button type="button" class="btn btn-preferencia-item">Histórico</button>
->>>>>>> front
           </div>
         </div>
       </div>
       <div class="col-12 user-options">
-        <button type="button" class="user-option-save">Guardar</button>
-        <button type="button" class="user-option-log-out">Cerrar Sesión</button>
+        <!--<button type="button" class="user-option-save">Guardar</button>-->
+        <button type="button" class="user-option-log-out" (click)="logout()">Cerrar Sesión</button>
       </div>
     </div>
   </div>

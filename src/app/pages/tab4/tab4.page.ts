@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { User } from 'src/app/models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab4',
@@ -10,7 +11,7 @@ import { User } from 'src/app/models/user';
 export class Tab4Page implements OnInit {
   user: User;
 
-  constructor(private storage: Storage) { }
+  constructor(private storage: Storage, private router: Router) { }
 
   ngOnInit() {
     this.user = new User();
@@ -21,6 +22,10 @@ export class Tab4Page implements OnInit {
     this.storage.get('user').then((val) => {
       this.user = val;
     });
+  }
+
+  logout() {
+    this.router.navigate(['/']);
   }
 
 }
