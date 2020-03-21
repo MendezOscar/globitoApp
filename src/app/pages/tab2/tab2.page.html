@@ -1,17 +1,71 @@
 <ion-content>
-    <ion-card>
-        <ion-card-header>
-            <ion-card-subtitle>La Paz</ion-card-subtitle>
-            <ion-card-title>Marcala</ion-card-title>
-            <img src="../../../assets/Marcala.jpg" />
-        </ion-card-header>
-
-        <ion-card-content>
-            Marcala es un municipio en el departamento de La Paz. Se ubica en el departamento de La Paz, 
-            a unos 100 Kilómetros al Oeste de Tegucigalpa. Situado en una planicie rodeado de montañas, 
-            colindando al sur con la República de El Salvador
-        </ion-card-content>
-        <ion-button (click)="goItineraryDetails()">Ver actividades</ion-button>
-    </ion-card>
-
-</ion-content>
+    <div class="container-fluid">
+      <!-- Encabezado principal -->
+      <div class="row encabezado">
+        <div class="col-8 saludo">
+          <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
+          <p>Hola, Fernando</p>
+        </div>
+        <div class="col-4">
+          <img src="../../../assets/globitoapp_logo.png" alt="Logo">
+        </div>
+        <div class="row imagen">
+          <div class="col">
+            <img src="../../../assets/home-image-1.png" alt="Imagen inicio">
+          </div>
+        </div>
+      </div>
+  
+      <!-- Contenido principal -->
+      <div class="row main-content">
+        <div class="row">
+          <div class="col-12 titulo-1">
+            <h5>Las aventuras que haz realizado...</h5>
+          </div>
+        </div>
+        <!-- Vaijes realizados -->
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 viaje-realizado">
+                <div class="card text-white">
+                  <img class="card-img" src="../../../assets/celaque-1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Celaque</h5>
+                    <p class="card-text">Lempira</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 viaje-realizado">
+                <div class="card text-white">
+                  <img class="card-img" src="../../../assets/trujillo-1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Trujillo</h5>
+                    <p class="card-text">Colón</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 viaje-realizado">
+                <div class="card text-white">
+                  <img class="card-img" src="../../../assets/san_pedro_sula_1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">San Pedro Sula</h5>
+                    <p class="card-text">Cortés</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 viaje-realizado">
+                <div class="card text-white">
+                  <img class="card-img" src="../../../assets/celaque-1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Celaque</h5>
+                    <p class="card-text">Lempira</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
