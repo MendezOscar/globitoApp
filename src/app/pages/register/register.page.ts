@@ -24,14 +24,14 @@ export class RegisterPage implements OnInit {
   }
 
   save() {
-    this.user = new User();
-    this.user.name = this.name;
-    this.user.email = this.username;
-    this.user.password = this.password;
-    this.user.type = 'USER';
-    this.registerService.createUser(this.user).subscribe(data => {
-      this.router.navigate(['/register-preferences']);
-    });
+    this.router.navigate(['/register-preferences']);
+    // this.user = new User();
+    // this.user.name = this.name;
+    // this.user.email = this.username;
+    // this.user.password = this.password;
+    // this.user.type = 'USER';
+    // this.registerService.createUser(this.user).subscribe(data => {
+    // });
   }
 
   cancel() {

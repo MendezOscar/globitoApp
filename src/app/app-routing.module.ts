@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: 'place-detail',
     loadChildren: () => import('./pages/place-detail/place-detail.module').then( m => m.PlaceDetailPageModule)
+  },
+  {
+    path: 'chatroom',
+    loadChildren: () => import('./pages/chatroom/chatroom.module').then( m => m.ChatroomPageModule)
   }
 
 ];
