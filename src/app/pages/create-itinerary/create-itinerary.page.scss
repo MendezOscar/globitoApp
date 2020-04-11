@@ -1,68 +1,105 @@
 .container-fluid{
-    background-color: #11846D;
-    font-family: 'Poppins', 'Font Awesome 5 Free';
-    height: 100vh;
-    color: #242732;
-  }
-  
-  .encabezado{
-    color: white;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .saludo{
-    display: -webkit-inline-box;
-  }
-  
-  .encabezado p{
-    margin-left: 10px;
-    font-size: 20px;
-  }
-  
-  .main-content{
-    background-color: white;
-    border-radius: 40px 40px 0px 0px;
-    padding: 15px;
-    margin-bottom: 40px;
-  }
-  
-  .titulo-1 h5{
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 22px;
-  }
-  
-  .viaje-realizado{
-    margin-bottom: 20px;
-  }
-  
-  .card{
-    border: none;
-  }
-  
-  .card .card-img{
-    height: 120px;
-    border-radius: 10px;
-  }
-  
-  .card-img-overlay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .card-img-overlay h5{
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 900;
-  }
-  
-  .card-img-overlay p{
-    margin: 0px;
-    font-size: 14px;
-  }
+  background-color: #11846D;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+  height: 100vh;
+  color: #242732;
+}
+
+.encabezado{
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.saludo{
+  display: -webkit-inline-box;
+}
+
+.encabezado p{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.main-content{
+  background-color: white;
+  border-radius: 40px 40px 0px 0px;
+  padding: 15px;
+  margin-bottom: 40px;
+  height: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  align-items: center;
+}
+
+.title{
+  margin-top: 20px;
+}
+
+.date-travel{
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.date-travel__label{
+  font-weight: 800;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.date-picker{
+  background-color: #C9FFF4;
+  color: #11846D;
+  font-weight: 800;
+  border-radius: 5px;
+  width: 100%;
+}
+
+ion-select{
+  background-color: #C9FFF4;
+  color: #11846D;
+  font-weight: 800;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.travel-activities{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.travel-activity{
+  width: 100px;
+  height: 130px;
+  --background: #F7F7F7;
+  margin-right: 10px;
+  color: #11846D;
+  font-family: 'Poppins';
+  font-weight: 800;
+}
+
+.activity-active{
+  --background: #C9FFF4;
+}
+
+.activity img{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-generate{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #11846D;
+  color: #C9FFF4;
+  font-weight: 800;
+  width: 100%;
+  height: 50px;
+}

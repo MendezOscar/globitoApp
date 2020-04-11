@@ -11,70 +11,78 @@
       </div>
       <div class="row imagen">
         <div class="col">
-          <img src="../../../assets/viajes-hechos.png" alt="Imagen inicio">
+          <img src="../../../assets/create-travel.png" alt="Imagen inicio">
         </div>
       </div>
     </div>
 
     <!-- Contenido principal -->
     <div class="row main-content">
-      <div class="row">
-        <div class="col-12 titulo-1">
-          <h5>Crear un viaje...</h5>
+      <div class="row create-travel">
+        <div class="col-12 title">
+          <p>Crea un nuevo viaje...</p>
         </div>
-      </div>
-      <!-- Vaijes realizados -->
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            
-            <ion-item class="login__input--user">
-              <ion-label>Inicio de viaje</ion-label>
-              <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
-            </ion-item>
-            <br>
-            <br>
-            <ion-item class="login__input--user">
-              <ion-label>Fin de viaje</ion-label>
-              <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
-            </ion-item>
-            <br>
-
-            <ion-item>
-              <ion-label>Lugar</ion-label>
-              <ion-select placeholder="Select One">
-                <ion-select-option value="f">Santa Cruz de Yojoa</ion-select-option>
-              </ion-select>
-            </ion-item>
-            <br>
-
-            <ion-button color="primary" (click)="goItineraries()">Crear</ion-button>
-
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/blank.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Trujillo</h5>
-                  <p class="card-text">Colón</p>
-                </div>
-              </div>
+        <!-- Start date -->
+        <div class="col-12 date-travel">
+          <ion-label class="date-travel__label">&#xf073; Inicio de viaje</ion-label>
+          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+        </div>
+        <!-- End date -->
+        <div class="col-12 date-travel">
+          <ion-label class="date-travel__label">&#xf073; Fin de viaje</ion-label>
+          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+        </div>
+        <!-- Location travel -->
+        <div class="col-12 date-travel">
+          <ion-label class="date-travel__label">&#xf14e; Lugar</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="f">Santa Cruz de Yojoa</ion-select-option>
+          </ion-select>
+        </div>
+        <div class="col-12">
+          <p>Resultados de actividades...</p>
+        </div>
+        <div class="col-12 travel-activities">
+          <ion-button class="travel-activity activity-active">
+            <div class="activity">
+              <img src="../../../assets/activity_bicycle.png" alt="">
+              <p>Bicicleta</p>
             </div>
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/blank.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">San Pedro Sula</h5>
-                  <p class="card-text">Cortés</p>
-                </div>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+          </ion-button>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_hiking.png" alt="">
+              <p>Senderismo</p>
             </div>
-
-          </div>
+          </ion-button>
+          <ion-button class="travel-activity activity-active">
+            <div class="activity">
+              <img src="../../../assets/activity_food.png" alt="">
+              <p>Comida</p>
+            </div>
+          </ion-button>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_art.png" alt="">
+              <p>Arte</p>
+            </div>
+          </ion-button>
+          <ion-button class="travel-activity activity-active">
+            <div class="activity">
+              <img src="../../../assets/activity_fishing.png" alt="">
+              <p>Pesca</p>
+            </div>
+          </ion-button>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_coffee.png" alt="">
+              <p>Café</p>
+            </div>
+          </ion-button>
+        </div>
+        <!-- Generate itinerary -->
+        <div class="col-12 btn-generate-itinerary">
+          <button class="btn btn-generate">GENERAR ITINERARIO</button>
         </div>
       </div>
     </div>
