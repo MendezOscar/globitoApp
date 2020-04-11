@@ -4,7 +4,7 @@
     <div class="row encabezado">
       <div class="col-8 saludo">
         <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
-        <p>Hola, Vanessa</p>
+        <p>Hola, {{user.name}}</p>
       </div>
       <div class="col-4">
         <img src="../../../assets/globitoapp_logo.png" alt="Logo">
@@ -23,7 +23,7 @@
           <p>La aventura te espera...</p>
         </div>
         <div class="col-12">
-          <button type="button" class="btn btn-light crear-viaje">
+          <button type="button" class="btn btn-light crear-viaje" (click)="createItinerary()">
             <h5>Crear un nuevo viaje</h5>
             <p>Comienza a armar tu viaje soñado</p>
           </button>
@@ -37,7 +37,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 place-recommend">
-              <div class="card text-white">
+              <div class="card text-white" (click)="goDetails()">
                 <img class="card-img" src="../../../assets/celaque.png" alt="Card image">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Panacam</h5>

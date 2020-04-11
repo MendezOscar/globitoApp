@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
+import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
 
-
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-itinerary-details',
+  templateUrl: './itinerary-details.page.html',
+  styleUrls: ['./itinerary-details.page.scss'],
 })
-export class Tab2Page implements OnInit {
+export class ItineraryDetailsPage implements OnInit {
   user: User;
 
   constructor(private storage: Storage, private router: Router) { }
@@ -19,18 +18,14 @@ export class Tab2Page implements OnInit {
     this.getInfoUser();
   }
 
-  goItineraryDetails() {
-    this.router.navigate(['/itinerarydetails']);
-  }
-
   getInfoUser() {
     this.storage.get('user').then((val) => {
       this.user = val;
     });
   }
 
-  goDetails() {
-    this.router.navigate(['/itinerary-details']);
+  back() {
+    this.router.navigate(['/home/tabs/tab2']);
   }
 
 }

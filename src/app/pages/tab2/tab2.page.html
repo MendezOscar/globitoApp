@@ -4,7 +4,7 @@
       <div class="row encabezado">
         <div class="col-8 saludo">
           <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
-          <p>Hola, Vanessa</p>
+          <p>Hola, {{user.name}}</p>
         </div>
         <div class="col-4">
           <img src="../../../assets/globitoapp_logo.png" alt="Logo">
@@ -28,11 +28,11 @@
           <div class="container">
             <div class="row">
               <div class="col-12 viaje-realizado">
-                <div class="card text-white">
+                <div class="card text-white" (click)="goDetails()">
                   <img class="card-img" src="../../../assets/celaque-1.jpg" alt="Card image">
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Panacam</h5>
-                    <p class="card-text">Cortes</p>
+                    <h5 class="card-title">Los Naranjos</h5>
+                    <p class="card-text">Santa Cruz de Yojoa</p>
                   </div>
                 </div>
               </div>

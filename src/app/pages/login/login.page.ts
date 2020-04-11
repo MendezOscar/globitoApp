@@ -41,16 +41,13 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    this.router.navigate(['/home/tabs/tab1']);
-    /*
-    this.router.navigate(['/home/tabs/tab1']);
     this.getUser();
     if (this.user) {
       this.storage.set('user', this.user);
       this.router.navigate(['/home/tabs/tab1']);
     } else {
       this.presentToast();
-    }*/
+    }
   }
 
 }

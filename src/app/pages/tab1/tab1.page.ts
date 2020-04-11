@@ -5,6 +5,7 @@ import { Travelinfo } from 'src/app/models/travelinfo';
 import { Storage } from '@ionic/storage';
 import { PlaceService } from 'src/app/services/places/place.service';
 import { Place } from 'src/app/models/Place';
+import { User } from 'src/app/models/user';
 
 
 @Component({
@@ -15,6 +16,7 @@ import { Place } from 'src/app/models/Place';
 export class Tab1Page implements OnInit {
   travelInfo: Travelinfo[];
   places: Place[];
+  user: User;
 
   constructor(private router: Router, private travelInfoService: TravelinfoService,
               private storage: Storage, private placeService: PlaceService) { }
@@ -23,13 +25,14 @@ export class Tab1Page implements OnInit {
     this.storage.get('user').then((val) => {
       this.travelInfoService.getByUser(val.userid).subscribe(data => {
         this.travelInfo = data;
-        console.log(this.travelInfo);
       });
     });
   }
 
   ngOnInit() {
+    this.user = new User();
     this.getPlaces();
+    this.getInfoUser();
   }
 
   createNewTravel() {
@@ -50,4 +53,19 @@ export class Tab1Page implements OnInit {
       console.log(this.places);
     });
   }
+
+  getInfoUser() {
+    this.storage.get('user').then((val) => {
+      this.user = val;
+    });
+  }
+
+  createItinerary() {
+    this.router.navigate(['/create-itinerary']);
+  }
+
+  goDetails() {
+    this.router.navigate(['/place-activities']);
+  }
+
 }

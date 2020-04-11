@@ -1,0 +1,82 @@
+<ion-content>
+  <div class="container-fluid">
+    <!-- Encabezado principal -->
+    <div class="row encabezado">
+      <div class="col-8 saludo">
+        <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
+        <p>Hola, {{user.name}}</p>
+      </div>
+      <div class="col-4">
+        <img src="../../../assets/globitoapp_logo.png" alt="Logo">
+      </div>
+      <div class="row imagen">
+        <div class="col">
+          <img src="../../../assets/viajes-hechos.png" alt="Imagen inicio">
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="row main-content">
+      <div class="row">
+        <div class="col-12 titulo-1">
+          <h5>Crear un viaje...</h5>
+        </div>
+      </div>
+      <!-- Vaijes realizados -->
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            
+            <ion-item class="login__input--user">
+              <ion-label>Inicio de viaje</ion-label>
+              <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+            </ion-item>
+            <br>
+            <br>
+            <ion-item class="login__input--user">
+              <ion-label>Fin de viaje</ion-label>
+              <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+            </ion-item>
+            <br>
+
+            <ion-item>
+              <ion-label>Lugar</ion-label>
+              <ion-select placeholder="Select One">
+                <ion-select-option value="f">Santa Cruz de Yojoa</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <br>
+
+            <ion-button color="primary" (click)="goItineraries()">Crear</ion-button>
+
+            <div class="col-12 viaje-realizado">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/blank.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Trujillo</h5>
+                  <p class="card-text">Colón</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 viaje-realizado">
+              <div class="card text-white">
+                <img class="card-img" src="../../../assets/blank.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">San Pedro Sula</h5>
+                  <p class="card-text">Cortés</p>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

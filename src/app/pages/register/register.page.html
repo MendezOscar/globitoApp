@@ -11,9 +11,9 @@
       <img src="../../../assets/globitoapp_register-image1.png" alt="" class="registro__image--1">
       <h3>REGISTRO DE <br/> USUARIO</h3>
       <form class="registro__formulario--inputs">
-        <input class="registro__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Nombre completo">
-        <input class="registro__input--email" type="text" name="email" id="email" placeholder="&#xf1fa; Correo electrónico">
-        <input class="registro__input--password" type="text" name="password" id="password" placeholder="&#xf023;  Contraseña">
+        <input class="registro__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Nombre completo" [(ngModel)]="name">
+        <input class="registro__input--email" type="text" name="email" id="email" placeholder="&#xf1fa; Usuario" [(ngModel)]="username">
+        <input class="registro__input--password" type="password" name="password" id="password" placeholder="&#xf023;  Contraseña" [(ngModel)]="password">
         <input class="registro__input--siguiente" (click)="save()" type="submit" value=">">
       </form>
     </div>

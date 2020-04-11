@@ -14,8 +14,8 @@
     <div class="row login__formulario">
       <img src="../../../assets/globitoapp_login-image1.png" alt="" class="login__image--1">
       <form class="login__formulario--inputs">
-        <input class="login__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Usuario">
-        <input class="login__input--password" type="password" name="password" id="password" placeholder="&#xF084; Contraseña">
+        <input class="login__input--user" type="text" name="user" id="user" placeholder="&#xF007;  Usuario" [(ngModel)]="username">
+        <input class="login__input--password" type="password" name="password" id="password" placeholder="&#xF084; Contraseña" [(ngModel)]="password">
         <input class="login__input--iniciar-sesion" (click)="login()" type="submit" value="Iniciar Sesión">
       </form>
       <a (click)="register()">Registrarse</a>
