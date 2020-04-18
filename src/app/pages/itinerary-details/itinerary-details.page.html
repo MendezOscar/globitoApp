@@ -1,11 +1,4 @@
 <ion-content>
-  
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="back()">
-      <
-    </ion-fab-button>
-  </ion-fab>
-
   <div class="container-fluid">
     <!-- Encabezado principal -->
     <div class="row encabezado">
@@ -16,63 +9,41 @@
       <div class="col-4">
         <img src="../../../assets/globitoapp_logo.png" alt="Logo">
       </div>
-      <div class="row imagen">
-        <div class="col">
-          <img src="../../../assets/viajes-hechos.png" alt="Imagen inicio">
-        </div>
-      </div>
     </div>
 
     <!-- Contenido principal -->
     <div class="row main-content">
-      <div class="row">
-        <div class="col-12 titulo-1">
-          <h5>Detalles de mi viaje...</h5>
-        </div>
-      </div>
-      <!-- Vaijes realizados -->
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/Kayak.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Kayak</h5>
-                  <p class="card-text">Los Naranjos</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/senderismo.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Senderismo</h5>
-                  <p class="card-text">Los Naranjos</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/food.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Comida</h5>
-                  <p class="card-text">Lakefood</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 viaje-realizado">
-              <div class="card text-white">
-                <img class="card-img" src="../../../assets/Hospedaje.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Hospedaje</h5>
-                  <p class="card-text">Los Naranjos</p>
-                </div>
-              </div>
-            </div>
+        <div class="col-12 travel-info">
+          <h6>Celaque</h6>
+          <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star"></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
           </div>
         </div>
+        <div class="col-12 travel-activities">
+          <p>Resultados de actividades...</p>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_bicycle.svg" alt="">
+              <p>Bicicleta</p>
+            </div>
+          </ion-button>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_hiking.png" alt="">
+              <p>Senderismo</p>
+            </div>
+          </ion-button>
+          <ion-button class="travel-activity">
+            <div class="activity">
+              <img src="../../../assets/activity_food.png" alt="">
+              <p>Comida</p>
+            </div>
+          </ion-button>
+        </div>
       </div>
-    </div>
   </div>
 </ion-content>

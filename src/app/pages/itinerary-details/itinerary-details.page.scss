@@ -1,72 +1,124 @@
-.container-fluid{
-    background-color: #11846D;
-    font-family: 'Poppins', 'Font Awesome 5 Free';
-    height: 100vh;
-    color: #242732;
-  }
-  
-  .encabezado{
-    color: white;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .saludo{
-    display: -webkit-inline-box;
-  }
-  
-  .encabezado p{
-    margin-left: 10px;
-    font-size: 20px;
-  }
-  
-  .main-content{
-    background-color: white;
-    border-radius: 40px 40px 0px 0px;
-    padding: 15px;
-    margin-bottom: 40px;
-  }
-  
-  .titulo-1 h5{
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 22px;
-  }
-  
-  .viaje-realizado{
-    margin-bottom: 20px;
-  }
-  
-  .card{
-    border: none;
-  }
-  
-  .card .card-img{
-    height: 120px;
-    border-radius: 10px;
-  }
-  
-  .card-img-overlay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .card-img-overlay h5{
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 900;
-  }
-  
-  .card-img-overlay p{
-    margin: 0px;
-    font-size: 14px;
-  }
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-  ion-fab-button {
-    --background: #11846D;
-  }
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before { 
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 18px;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+
+.starrating > label
+{
+  color: #222222; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
+// Fin de las estrelas
+
+
+
+.container-fluid{
+  background-color: #11846D;
+  font-family: 'Poppins', 'Font Awesome 5 Free';
+  height: 100vh;
+  color: #242732;
+}
+
+.encabezado{
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.saludo{
+  display: -webkit-inline-box;
+}
+
+.encabezado p{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.main-content{
+  background-color: white;
+  border-radius: 40px 40px 0px 0px;
+  margin-bottom: 40px;
+  height: 100vh;
+  display: flex;
+}
+
+.travel-info{
+  margin-top: 0px;
+  border-radius: 40px 40px 0px 0px;
+  min-height: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../../assets/celaque-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.travel-info h6{
+  font-size: 30px;
+  color: white;
+}
+
+.travel-text{
+  margin-bottom: 30px;
+}
+
+.travel-activities{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.travel-activities p{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.travel-activity{
+  width: 90%;
+  height: 130px;
+  --background: #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.activity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity img{
+  height: 70%;
+  margin-right: 15px;
+}
+
+.activity p{
+  color: #11846D;
+  font-family: 'Poppins';
+  font-weight: 800;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
