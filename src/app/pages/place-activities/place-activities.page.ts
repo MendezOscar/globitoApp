@@ -28,4 +28,8 @@ export class PlaceActivitiesPage implements OnInit {
     this.router.navigate(['/home/tabs/tab1']);
   }
 
+  goDetail() {
+    this.router.navigate(['/place-detail']);
+  }
+
 }

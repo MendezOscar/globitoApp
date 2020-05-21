@@ -25,12 +25,12 @@
         <!-- Start date -->
         <div class="col-12 date-travel">
           <ion-label class="date-travel__label">&#xf073; Inicio de viaje</ion-label>
-          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="2020" max="2030" value="2020-05-10T11:06Z"></ion-datetime>
         </div>
         <!-- End date -->
         <div class="col-12 date-travel">
           <ion-label class="date-travel__label">&#xf073; Fin de viaje</ion-label>
-          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="1997" max="2010" value="2020-01-01T11:06Z"></ion-datetime>
+          <ion-datetime class="date-picker" displayFormat="D MMM YYYY" min="2020" max="2020" value="2020-05-10T11:06Z"></ion-datetime>
         </div>
         <!-- Location travel -->
         <div class="col-12 date-travel">
@@ -82,7 +82,7 @@
         </div>
         <!-- Generate itinerary -->
         <div class="col-12 btn-generate-itinerary">
-          <button class="btn btn-generate">GENERAR ITINERARIO</button>
+          <button class="btn btn-generate" (click)="goItineraries()">GENERAR ITINERARIO</button>
         </div>
       </div>
     </div>
