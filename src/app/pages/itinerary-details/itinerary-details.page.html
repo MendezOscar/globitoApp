@@ -28,27 +28,69 @@
             <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
           </div>
         </div>
-        <div class="col-12 travel-activities">
-          <p>Resultados de actividades...</p>
-          <ion-button class="travel-activity">
-            <div class="activity">
-              <img src="../../../assets/activity_bicycle.svg" alt="">
-              <p>Bicicleta</p>
+
+        <div class="col-12 place-detail-info">
+          <nav id="navbar-place" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="place-detail/#description">Descripción <br/>General</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="place-detail/#photos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="place-detail/#reviews">Opiniones</a>
+              </li>
+            </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-place" data-offset="0">
+            <div class="row place-info-sections">
+              <div class="col-12 description-info">
+                <h4 id="description">Descripción general de mi viaje</h4>
+                <p><span>&#xf015;</span>Nombre: Los Naranjos</p>
+                <p><span>&#xf3c5;</span>Ubicación: Santa De Yojoa.</p>
+                <!--Google map-->
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"style="border:0" allowfullscreen></iframe>
+                <!--Google Maps-->
+              </div>
+              <div class="col-12 gallery-info">
+                <h4 id="photos">Fotos<span>&#xf302;</span></h4>
+                <!-- Aquí COMIENZA la galeria -->
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="../../../assets/place-pic1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../../../assets/place-pic2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../../../assets/place-pic3.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguente</span>
+                  </a>
+                </div>
+                <br>
+                <h4 id="photos">Subir fotos de mi viaje<span>&#xf302;</span></h4>
+                <!-- Aquí TERMINA la galeria -->
+                <input type="file" name="myFile">
+              </div>
             </div>
-          </ion-button>
-          <ion-button class="travel-activity">
-            <div class="activity">
-              <img src="../../../assets/activity_hiking.png" alt="">
-              <p>Senderismo</p>
-            </div>
-          </ion-button>
-          <ion-button class="travel-activity">
-            <div class="activity">
-              <img src="../../../assets/activity_food.png" alt="">
-              <p>Comida</p>
-            </div>
-          </ion-button>
+          </div>
         </div>
+
       </div>
   </div>
 </ion-content>

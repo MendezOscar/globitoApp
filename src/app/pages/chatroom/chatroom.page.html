@@ -1,9 +1,44 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>chatroom</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
 </ion-content>
+<div class="ion-page" main>
+  <ion-header>
+    <ion-toolbar >
+      <img src="../../../assets/user-avatar-home.png" alt="Avatar user">
+      <ion-back-button defaultHref="" slot="end"></ion-back-button>
+      <ion-title>Chat Privado</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+    <!-- <div class="msjCustomer" *ngFor="let item of chats">
+      {{ item.mensaje }}
+    </div> 
+    <div *ngFor="let item of chatsCustomer">
+      <ion-item class="itemMSj" color="{{ item.color }}">
+        <ion-text slot="{{ item.slot }}">{{ item.mensaje }}</ion-text>
+      </ion-item>
+    </div> -->
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar >
+      <div class="contenedorMSJ">
+        <div class="msj">
+          <ion-input
+            place-holer="Enviar un mensaje..."
+          ></ion-input>
+        </div>
+        <div class="sendMsj">
+          <ion-icon
+            size="large"
+            name="send"
+          ></ion-icon>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>
