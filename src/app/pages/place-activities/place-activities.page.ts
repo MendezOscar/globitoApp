@@ -32,4 +32,8 @@ export class PlaceActivitiesPage implements OnInit {
     this.router.navigate(['/place-detail']);
   }
 
+  goActivityDetail() {
+    this.router.navigate(['/activity-detail']);
+  }
+
 }

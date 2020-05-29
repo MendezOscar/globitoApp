@@ -23,13 +23,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/travelinfo/travelinfo.module').then( m => m.TravelinfoPageModule)
   },
   {
-    path: 'chat',
-    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
-  },
-  {
     path: 'register-preferences',
     loadChildren: () => import('./pages/register-preferences/register-preferences.module').then( m => m.RegisterPreferencesPageModule)
-  },  {
+  },
+  {
     path: 'create-itinerary',
     loadChildren: () => import('./pages/create-itinerary/create-itinerary.module').then( m => m.CreateItineraryPageModule)
   },
@@ -44,11 +41,11 @@ const routes: Routes = [
   {
     path: 'place-detail',
     loadChildren: () => import('./pages/place-detail/place-detail.module').then( m => m.PlaceDetailPageModule)
-  },
-  {
-    path: 'chatroom',
-    loadChildren: () => import('./pages/chatroom/chatroom.module').then( m => m.ChatroomPageModule)
+  },  {
+    path: 'activity-detail',
+    loadChildren: () => import('./pages/activity-detail/activity-detail.module').then( m => m.ActivityDetailPageModule)
   }
+
 
 ];
 @NgModule({
