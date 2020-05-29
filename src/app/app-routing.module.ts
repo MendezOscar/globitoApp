@@ -44,6 +44,10 @@ const routes: Routes = [
   },  {
     path: 'activity-detail',
     loadChildren: () => import('./pages/activity-detail/activity-detail.module').then( m => m.ActivityDetailPageModule)
+  },
+  {
+    path: 'payament-modal',
+    loadChildren: () => import('./pages/payament-modal/payament-modal.module').then( m => m.PayamentModalPageModule)
   }
 
 

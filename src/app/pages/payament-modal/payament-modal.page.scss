@@ -1,0 +1,74 @@
+.container-fluid{
+    background-color: #11846D;
+    font-family: 'Poppins', 'Font Awesome 5 Free';
+    height: 100vh;
+    color: #242732;
+  }
+  
+  .encabezado{
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .saludo{
+    display: -webkit-inline-box;
+  }
+  
+  .encabezado p{
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .main-content{
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    padding: 15px;
+    margin-bottom: 40px;
+    height: 100vh;
+  }
+  
+  .titulo-1 h5{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 22px;
+  }
+  
+  .viaje-realizado{
+    margin-bottom: 20px;
+  }
+  
+  .card{
+    border: none;
+  }
+  
+  .card .card-img{
+    height: 120px;
+    border-radius: 10px;
+  }
+  
+  .card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card-img-overlay h5{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 900;
+  }
+  
+  .card-img-overlay p{
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  ion-fab-button {
+    --background: #11846D;
+  }
+  

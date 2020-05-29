@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ActivityDetailPageRoutingModule } from './activity-detail-routing.module';
 
 import { ActivityDetailPage } from './activity-detail.page';
+import { PayamentModalPage } from '../payament-modal/payament-modal.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ActivityDetailPage } from './activity-detail.page';
     IonicModule,
     ActivityDetailPageRoutingModule
   ],
-  declarations: [ActivityDetailPage]
+  declarations: [ActivityDetailPage, PayamentModalPage],
+  entryComponents: [PayamentModalPage]
 })
 export class ActivityDetailPageModule {}
